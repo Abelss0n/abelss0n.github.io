@@ -67,10 +67,16 @@
   ],
   "projects": [
     {
-      "name": "Personal Website Project",
+      "name": "Personal Website Project (2025)",
       "url": "https://abelss0n.github.io/",
       "description": "A simple website project that is intended to be customizable for other users and expandable over time as it suits my needs for a personal website. Created as a single page java application.",
       "image": "assets/projects/personal_website.png"
+    },
+    {
+      "name": "Second Act RP - FiveM (2025)",
+      "url": "https://discord.gg/SCH6EFAm8C",
+      "description": "Second Act RP is a Roleplay Server for the Grand Theft Auto V, FiveM Platform. I worked on the development team to implement features/scripts, develop custom scripts and applications, and assisted with server IT operations and moderation.",
+      "image": "assets/projects/second_act_rp.jpg"
     }
   ]
 }
