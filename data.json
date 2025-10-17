@@ -23,7 +23,8 @@
     { "title": "Advanced Digital Forensic Analysis: MacOS", "date": "2024, 32 Hours", "issuer": "NW3C", "badge": "assets/badges/nw3c.png", "kind": "training" },
     { "title": "Advanced Digital Forensic Analysis: Linux", "date": "2024, 14 Hours", "issuer": "NW3C", "badge": "assets/badges/nw3c.png", "kind": "training" },
     { "title": "Advanced Digital Forensic Analysis: iOS & Android", "date": "2024, 32 Hours", "issuer": "NW3C", "badge": "assets/badges/nw3c.png", "kind": "training" },
-    { "title": "Cellebrite Advanced Smartphone Analysis", "date": "2025", "issuer": "Cellebrite", "badge": "assets/badges/casa.png", "kind": "certification" }
+    { "title": "Cellebrite Advanced Smartphone Analysis", "date": "2025", "issuer": "Cellebrite", "badge": "assets/badges/casa.png", "kind": "certification" },
+    { "title": "A.S. Computer Science", "date": "2026", "issuer": "University of the People", "badge": "assets/badges/uop.png", "kind": "education" }
   ],
   "work": [
     {
