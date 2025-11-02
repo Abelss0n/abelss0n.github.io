@@ -19,12 +19,14 @@
     { "title": "Cellebrite Certified Operator", "date": "2024, Active", "issuer": "Cellebrite", "badge": "assets/badges/cco.png", "kind": "certification" },
     { "title": "Cellebrite Certified Physical Analyst", "date": "2024, Active", "issuer": "Cellebrite", "badge": "assets/badges/ccpa.png", "kind": "certification" },
     { "title": "Crime Scene Investigation School", "date": "2024, 40 Hours", "issuer": "JCSO Criminalistics Laboratory", "badge": "assets/badges/jcso.png", "kind": "training" },
+    { "title": "Dallas CAC Conference 2024", "date": "2024, 35 Hours", "issuer": "DCAC", "badge": "assets/badges/dcac.png", "kind": "training" },
     { "title": "Advanced Digital Forensic Analysis: Windows", "date": "2024, 32 Hours", "issuer": "NW3C", "badge": "assets/badges/nw3c.png", "kind": "training" },
     { "title": "Advanced Digital Forensic Analysis: MacOS", "date": "2024, 32 Hours", "issuer": "NW3C", "badge": "assets/badges/nw3c.png", "kind": "training" },
     { "title": "Advanced Digital Forensic Analysis: Linux", "date": "2024, 14 Hours", "issuer": "NW3C", "badge": "assets/badges/nw3c.png", "kind": "training" },
     { "title": "Advanced Digital Forensic Analysis: iOS & Android", "date": "2024, 32 Hours", "issuer": "NW3C", "badge": "assets/badges/nw3c.png", "kind": "training" },
     { "title": "Cellebrite Advanced Smartphone Analysis", "date": "2025", "issuer": "Cellebrite", "badge": "assets/badges/casa.png", "kind": "certification" },
-    { "title": "A.S. Computer Science", "date": "2026", "issuer": "University of the People", "badge": "assets/badges/uop.png", "kind": "education" }
+    { "title": "A.S. Computer Science", "date": "2026", "issuer": "University of the People", "badge": "assets/badges/uop.png", "kind": "education" },
+    { "title": "Certified Expert in Cyber Investigations", "date": "2025, Pending", "issuer": "McAfee Institute", "badge": "assets/badges/ceci.png", "kind": "certification" }
   ],
   "work": [
     {
