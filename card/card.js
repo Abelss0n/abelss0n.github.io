@@ -59,6 +59,9 @@ async function initCard() {
     if (data.emails?.leo) {
       buttons.push(createActionButton("Law Enforcement Contact", `mailto:${data.emails.leo}`));
     }
+    if (data.social?.line) {
+      buttons.push(createActionButton("Line", data.social.line));
+    }
     if (data.social?.github) {
       buttons.push(createActionButton("GitHub", data.social.github));
     }
