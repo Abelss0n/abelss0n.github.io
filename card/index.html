@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <title>Abel Garcia | Digital Card</title>
+  <meta name="description" content="Mobile-first digital business card for Abel Garcia." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Manrope:wght@500;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="card.css" />
+</head>
+<body>
+  <main class="card-shell" aria-labelledby="card-name">
+    <section class="card-panel">
+      <header class="profile">
+        <div class="photo-wrap">
+          <img id="card-photo" src="" alt="Portrait of Abel Garcia" loading="eager" />
+        </div>
+        <div class="identity">
+          <p class="eyebrow">Investigator</p>
+          <h1 id="card-name">Abel Garcia</h1>
+          <p class="title" id="card-tagline">Digital Forensics & Information Technology</p>
+        </div>
+      </header>
+
+      <section class="summary" aria-labelledby="summary-heading">
+        <h2 id="summary-heading">Summary</h2>
+        <p id="card-summary">Loading profile summary...</p>
+      </section>
+
+      <section class="actions" aria-label="Contact and social links">
+        <h2>Connect</h2>
+        <div id="action-buttons" class="action-grid"></div>
+      </section>
+
+      <section class="certifications" aria-labelledby="cert-heading">
+        <button type="button" class="cert-toggle" id="cert-toggle" aria-expanded="false" aria-controls="cert-list">
+          View Current Certifications
+        </button>
+        <div id="cert-list" class="cert-list" hidden></div>
+      </section>
+
+      <footer class="footer">
+        <a href="/" class="home-link" aria-label="Back to main site">Back to Main Site</a>
+      </footer>
+    </section>
+  </main>
+
+  <script src="card.js" defer></script>
+</body>
+</html>
