@@ -65,6 +65,9 @@ async function initCard() {
     if (data.social?.github) {
       buttons.push(createActionButton("GitHub", data.social.github));
     }
+    if (data.social?.linkedin) {
+      buttons.push(createActionButton("LinkedIn", data.social.linkedin));
+    }
     if (data.social?.instagram) {
       buttons.push(createActionButton("Instagram", data.social.instagram));
     }
