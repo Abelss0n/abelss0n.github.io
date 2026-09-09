@@ -71,6 +71,40 @@
         "Enforced state statutes and municipal ordinances within the city limits through the issuance of citations and execution of arrests/warrants.",
         "Maintained required certifications and equipment as required by agency leadership."
       ]
+    },
+    {
+      "role": "Operations Manager",
+      "org": "GuardTexas",
+      "period": "2020 — 2022",
+      "location": "Austin, TX",
+      "bullets": [
+        "Patrol Operations Manager (2021 — 2022): Supervised the Patrol Operations Unit, ensuring compliance with company policies, effective management of patrol routes, and the hiring of armed patrol personnel.",
+        "Special Operations Manager (2020 — 2021): Managed special operations activities, ensured that priority static guard posts were staffed, special events were covered, and secured last minute staffing for special assignments."
+      ]
+    },
+    {
+      "role": "Software Developer & Support Specialist",
+      "org": "I Fix IT Tech, LLC.",
+      "period": "2017 — 2020",
+      "location": "Austin, TX",
+      "bullets": [
+        "Develop applications and scripts as needed for existing client tools.",
+        "Provided technical support and troubleshooting for client hardware and software issues.",
+        "Assisted in the deployment and configuration of client IT infrastructure.",
+        "Maintained documentation for client systems and configurations."
+      ]
+    },
+    {
+      "role": "Software Engineer",
+      "org": "MLAW Engineers",
+      "period": "2016 — 2020",
+      "location": "Austin, TX",
+      "bullets": [
+        "Developed applications and scripts as needed for the AutoDESK suite of tools.",
+        "Maintained documentation for AutoDESK suite configurations and development processes as needed.",
+        "Maintained the code library using Gitlab and ensured access was managed appropriately for outside contractors.",
+        "Maintained a working understanding of ObjectARX, the AutoCAD runtime extension for custom development."
+      ]
     }
   ],
   "projects": [
