@@ -31,7 +31,8 @@
     { "title": "Certified Professional Criminal Investigator", "date": "2025, Active", "issuer": "McAfee Institute", "badge": "assets/badges/cpci.png", "kind": "certification" },
     { "title": "Certified Expert in Cyber Investigations", "date": "2025, Active", "issuer": "McAfee Institute", "badge": "assets/badges/ceci.png", "kind": "certification" },
     { "title": "C|ECI and C|PCI Training", "date": "2025, 200 Hours", "issuer": "McAfee Institute", "badge": "assets/badges/mi.png", "kind": "training" },
-    { "title": "Certified Cyber Crime Investigator", "date": "2026, Active", "issuer": "NW3C", "badge": "assets/badges/3CI.png", "kind": "certification" }
+    { "title": "Certified Cyber Crime Investigator", "date": "2026, Active", "issuer": "NW3C", "badge": "assets/badges/3CI.png", "kind": "certification" },
+    { "title": "Dallas CAC Conference 2026", "date": "2026, 26 Hours", "issuer": "DCAC", "badge": "assets/badges/dcac.png", "kind": "training" }
   ],
   "work": [
     {

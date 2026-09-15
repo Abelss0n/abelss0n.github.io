@@ -54,6 +54,7 @@ section.card.active { display: block; }
 
 .muted { color: var(--muted); }
 .pill { font-size: .8rem; padding: 4px 10px; border-radius: 999px; background: rgba(255,255,255,.06); border: 1px solid rgba(255,255,255,.1); }
+.pill-list { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 4px; }
 .icons { display: flex; gap: 10px; align-items: center; }
 .icons a { display: inline-flex; padding: 8px; border-radius: 12px; border: 1px solid rgba(255,255,255,.14); background: rgba(255,255,255,.04); }
 .icons a:hover { border-color: rgba(255,255,255,.28); transform: translateY(-1px); }
