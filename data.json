@@ -110,6 +110,12 @@
   ],
   "projects": [
     {
+      "name": "Irodori Webapp (2026)",
+      "url": "https://abelss0n.github.io",
+      "description": "A simple website that guides users through the Irodori Japanese Language textbook. Also helping memorize Hiragana, Katakana, and Kanji characters. Created as a single page java application.",
+      "image": "assets/projects/irodori_webapp.png"
+    },
+    {
       "name": "Personal Website Project (2025)",
       "url": "https://abelss0n.github.io/",
       "description": "A simple website project that is intended to be customizable for other users and expandable over time as it suits my needs for a personal website. Created as a single page java application.",
