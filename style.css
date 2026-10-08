@@ -275,3 +275,117 @@ footer { text-align: center; color: var(--muted); margin: 24px 0 12px; font-size
   font-size: 1rem;
   opacity: .9;
 }
+
+/* ---------- Home: live status pill ---------- */
+.status-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 9px;
+  margin: 22px 0 28px;
+  padding: 8px 16px;
+  font-size: .9rem;
+  font-weight: 500;
+  color: var(--text);
+}
+.dot-pulse {
+  position: relative;
+  width: 9px;
+  height: 9px;
+  border-radius: 50%;
+  background: var(--ok);
+  flex: none;
+}
+.dot-pulse::after {
+  content: "";
+  position: absolute;
+  inset: -5px;
+  border-radius: 50%;
+  border: 2px solid var(--ok);
+  opacity: .55;
+  animation: pulse 2.2s ease-out infinite;
+}
+@keyframes pulse {
+  0% { transform: scale(.6); opacity: .55; }
+  100% { transform: scale(1.8); opacity: 0; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .dot-pulse::after { animation: none; display: none; }
+}
+
+/* ---------- Home: focus / skill chips ---------- */
+.chip-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  justify-content: center;
+  margin: 0 0 32px;
+}
+.chip-row .pill.accent {
+  background: linear-gradient(135deg, rgba(96,165,250,.16), rgba(167,139,250,.16));
+  border-color: rgba(167,139,250,.35);
+  color: #d6e4ff;
+}
+
+/* ---------- Home: at-a-glance tiles ---------- */
+.glance-head {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  margin: 8px 0 14px;
+  flex-wrap: wrap;
+  gap: 8px;
+  text-align: left;
+}
+.glance-head h3 { margin: 0; font-size: 1.05rem; }
+.glance-hint { font-size: .85rem; }
+.glance {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 14px;
+  margin-bottom: 8px;
+}
+@media (max-width: 760px) {
+  .glance { grid-template-columns: 1fr; }
+}
+.tile {
+  text-align: left;
+  appearance: none;
+  cursor: pointer;
+  color: var(--text);
+  background: linear-gradient(180deg, rgba(255,255,255,.045), rgba(255,255,255,.015));
+  border: 1px solid rgba(255,255,255,.08);
+  border-radius: 14px;
+  padding: 18px 18px 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  font-family: inherit;
+  transition: transform .12s ease, border-color .2s ease, box-shadow .2s ease;
+}
+.tile:hover, .tile:focus-visible {
+  transform: translateY(-2px);
+  border-color: rgba(255,255,255,.22);
+  box-shadow: 0 14px 28px rgba(0,0,0,.3);
+}
+.tile .num {
+  font-size: 2.1rem;
+  font-weight: 800;
+  line-height: 1;
+  background: linear-gradient(135deg, var(--brand), var(--brand-2));
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  font-variant-numeric: tabular-nums;
+}
+.tile .label { font-weight: 600; font-size: .92rem; }
+.tile .sub { color: var(--muted); font-size: .82rem; line-height: 1.5; }
+.tile .go {
+  margin-top: 6px;
+  font-size: .78rem;
+  font-weight: 600;
+  color: var(--ring);
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+}
+.tile:hover .go, .tile:focus-visible .go { text-decoration: underline; }

@@ -96,6 +96,68 @@
     });
   }
 
+  function stripYearSuffix(name = '') {
+    return name.replace(/\s*\(\d{4}\)\s*$/, '');
+  }
+
+  // --- Home: at-a-glance tiles (computed from DATA, click jumps to that tab) ---
+  function renderGlanceTiles(DATA) {
+    const root = document.getElementById('glance-tiles');
+    if (!root) return;
+
+    const work = DATA.work || [];
+    const projects = DATA.projects || [];
+    const education = DATA.education || [];
+
+    const activeJobs = work.filter(j => /present/i.test(j.period || ''));
+    const startYears = work
+      .map(j => (j.period || '').match(/\d{4}/))
+      .filter(Boolean)
+      .map(m => parseInt(m[0], 10));
+    const earliestYear = startYears.length ? Math.min(...startYears) : null;
+
+    const activeCerts = education.filter(e => e.kind === 'certification' && /active/i.test(e.date || ''));
+    const trainings = education.filter(e => e.kind === 'training');
+    const degrees = education.filter(e => e.kind === 'education');
+
+    const tiles = [
+      {
+        target: 'work',
+        num: activeJobs.length,
+        label: 'Active roles',
+        sub: `${activeJobs.map(j => j.role).join(' · ') || 'No active roles'}${earliestYear ? ` — ${work.length} positions since ${earliestYear}` : ''}`,
+        go: 'View work history'
+      },
+      {
+        target: 'projects',
+        num: projects.length,
+        label: 'Projects shipped',
+        sub: projects.map(p => stripYearSuffix(p.name)).join(' · ') || 'None yet',
+        go: 'View projects'
+      },
+      {
+        target: 'education',
+        num: education.length,
+        label: 'Credentials earned',
+        sub: `${activeCerts.length} active certs · ${trainings.length} trainings · ${degrees.length} degrees/diplomas`,
+        go: 'View education & training'
+      }
+    ];
+
+    root.innerHTML = tiles.map(t => `
+      <button class="tile" type="button" data-target="${t.target}">
+        <span class="num">${t.num}</span>
+        <span class="label">${t.label}</span>
+        <span class="sub">${t.sub}</span>
+        <span class="go">${t.go} →</span>
+      </button>
+    `).join('');
+
+    root.querySelectorAll('.tile').forEach(btn => {
+      btn.addEventListener('click', () => setActive(btn.dataset.target));
+    });
+  }
+
   // ------- Hydration -------
   function hydrate(DATA) {
     const nameNorm = document.getElementById('name-normal');
@@ -228,6 +290,25 @@
 
     // Projects
     renderProjects(DATA.projects || []);
+
+    // --- Home: live status pill ---
+    const statusPill = document.getElementById('status-pill');
+    const statusText = document.getElementById('status-text');
+    if (statusText && DATA.status) {
+      statusText.textContent = DATA.status;
+      if (statusPill) statusPill.hidden = false;
+    }
+
+    // --- Home: focus / skill chips ---
+    const focusChips = document.getElementById('focus-chips');
+    if (focusChips) {
+      focusChips.innerHTML = (DATA.focus || [])
+        .map(f => `<span class="pill accent">${f}</span>`)
+        .join('');
+    }
+
+    // --- Home: at-a-glance tiles ---
+    renderGlanceTiles(DATA);
   }
 
 

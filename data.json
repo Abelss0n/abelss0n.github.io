@@ -2,6 +2,8 @@
   "name": "Abel Garcia",
   "initials": "AG",
   "tagline": "Digital Forensics & Information Technology",
+  "status": "Currently on task force duty & shipping code nights and weekends.",
+  "focus": ["Digital Forensics", "Solutions Engineering", "Python", "TypeScript", "React · learning", "GraphQL · learning", "日本語 ・ learning"],
   "bio": "I am a technology-minded professional with experience across both the public and private sector in criminal investigations, cyber investigations, digital forensic extraction and examination, IT managed services, basic application development, automation scripting, and corporate forensics.\n\nIn my primary role, I am a Criminal Investigator and Task Force Officer in the State of Missouri. I conduct investigations into Internet Crimes Against Children as an affiliate and perform digital forensics on MacOS, Windows, Linux, and Mobile systems. I am trained and certified to triage devices for criminal activity and files, perform forensic extractions, and then perform subsequent examinations of those extractions. I also assist with the regional Crime Scene Investigation team in the collection of evidence for homicides, suspicious deaths, and other crimes against persons.\n\nI also work as a solutions technician with GTGweb MSP, where I work remotely to handle client support and development requests, maintain user endpoints through RMM toolsets, plan, configure, and deploy backup and disaster recovery options, and onboard clients into our systems. I currently manage the support queue for around 30 end users across our SMB clients each with their own endpoint, as well as two Meraki networking sites and just over a dozen hosted websites.",
   "photo": "assets/photos/me.png",
   "emails": {
@@ -26,7 +28,7 @@
     { "title": "Advanced Digital Forensic Analysis: MacOS", "date": "2024, 32 Hours", "issuer": "NW3C", "badge": "assets/badges/nw3c.png", "kind": "training" },
     { "title": "Advanced Digital Forensic Analysis: Linux", "date": "2024, 14 Hours", "issuer": "NW3C", "badge": "assets/badges/nw3c.png", "kind": "training" },
     { "title": "Advanced Digital Forensic Analysis: iOS & Android", "date": "2024, 32 Hours", "issuer": "NW3C", "badge": "assets/badges/nw3c.png", "kind": "training" },
-    { "title": "Cellebrite Advanced Smartphone Analysis", "date": "2025", "issuer": "Cellebrite", "badge": "assets/badges/casa.png", "kind": "certification" },
+    { "title": "Cellebrite Advanced Smartphone Analysis", "date": "2025, Active", "issuer": "Cellebrite", "badge": "assets/badges/casa.png", "kind": "certification" },
     { "title": "A.S. Computer Science", "date": "2026", "issuer": "University of the People", "badge": "assets/badges/uop.png", "kind": "education" },
     { "title": "Certified Professional Criminal Investigator", "date": "2025, Active", "issuer": "McAfee Institute", "badge": "assets/badges/cpci.png", "kind": "certification" },
     { "title": "Certified Expert in Cyber Investigations", "date": "2025, Active", "issuer": "McAfee Institute", "badge": "assets/badges/ceci.png", "kind": "certification" },
